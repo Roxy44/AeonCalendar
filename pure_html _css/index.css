@@ -1,0 +1,472 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Euclid Circular A', sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+.page_container {
+    width: 1024px;
+    padding: 0 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Главная страница */
+.main_page {
+    display: flex;
+    justify-content: center;
+    background-color: #CBECFF;
+    height: 679px;
+}
+
+/* Переключатель языка */
+.languages {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 29px 0 13px;
+    font-size: 14px;
+}
+
+.languages > :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 24px;
+    margin-right: 15px;
+    border-radius: 12px;
+    background-color: white;
+    color: #0962E8;
+}
+
+/* Основной контент страницы */
+.main_page .content {
+    display: flex;
+    width: 100%;
+    height: 530px;
+    justify-content: space-between;
+}
+
+/* Левый блок */
+.main_page .logo {
+    display: flex;
+    margin-top: 63px;
+    margin-bottom: 11px;
+}
+
+.main_page .logo {
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.main_page .logo div:first-child {
+    color: #29374E;
+    margin-right: 3px;
+}
+
+.main_page .logo div:nth-child(2) {
+    padding: 0 18px 0 12px;
+    background-color: white;
+    border-radius: 20px;
+    color: #0962E8
+}
+
+.main_page .description {
+    margin-bottom: 38px;
+    width: 384px;
+    color: #29374E;
+    font-size: 22px;
+    line-height: 140%;
+}
+
+.btn_demo {
+    font-size: 18px;
+    width: 200px;
+    height: 52px;
+    color: white;
+    background-color: #0962E8;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Правый блок */
+.container_phone {
+    position: relative;
+    width: 550px;
+}
+
+.img_phone {
+    position: absolute;
+    background-image: url('./images/Phone.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 400px;
+    left: 158px;
+    top: 18px;
+    z-index: 2;
+}
+
+.img_hand {
+    position: absolute;
+    background-image: url('./images/theHand.png');
+    background-repeat: no-repeat;
+    background-position: 27px -60px;
+    width: 568px;
+    height: 100%;
+    z-index: 1;
+}
+
+.first_сircle {
+    position: absolute;
+    margin-top: 8px;
+    width: 536px;
+    height: 536px;
+    border: 4px solid white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.second_сircle {
+    margin-left: 44px;
+    position: absolute;
+    width: 399px;
+    height: 399px;
+    border: 78px solid #E0F2FF;
+    border-radius: 50%;
+    z-index: 0;
+} 
+
+/* Блок с карточками */
+.container_card {
+    width: 100%;
+    margin-bottom: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #29374E;
+    line-height: 140%;
+}
+
+.container_card > div {
+    display: flex;
+    justify-content: space-between;
+    width: 201px;
+    height: 88px;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.container_card .text_card {
+    color: #29374E;
+    width: 73%;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 6px;
+    z-index: 1;
+}
+
+.container_card .icon_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #EFF9FF;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Вторая страница */
+.advantages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Заголовок*/
+.title_advantages {
+    text-align: center;
+    font-size: 38px;
+    color: #29374E;
+    max-width: 753px;
+    margin: 150px 0 44px;
+}
+
+/* Блок с карточками */
+.container_card_phone {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.card_phone {
+    background-color: #E9F6FF;
+    border-radius: 30px;
+    min-width: 449px;
+    max-height: 291px;
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 33px 0 20px;
+}
+
+.card_phone .container_text {
+    max-width: 210px;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.card_phone .container_text > .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.img_card_phone {
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    background-size: 100%;
+    width: 218px;
+    height: 291px;
+}
+
+.img-strategies {
+    background-image: url('./images/leftPic.png');
+}
+.img-advising {
+    background-image: url('./images/rightPic.png');
+}
+
+/* Конец страницы */
+.container_importance {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container_importance .container_text {
+    max-width: 500px;
+    font-size: 14px;
+}
+
+.container_importance .title_advantages {
+    text-align: left;
+    margin: 0 0 21px;
+}
+
+.container_importance .container_text .description {
+    max-width: 405px;
+    margin-bottom: 37px;
+    line-height: 140%;
+}
+
+.advantages .container_card {
+    width: 501px;
+}
+
+.advantages .container_card > div {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 26px;
+    height: 110px;
+    width: 191px;
+}
+
+.advantages .icon_card_importance {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.container_card .text_card {
+    width: 100%;
+}
+
+.icon-money {
+    background-image: url('./images/icon-money.png');
+} 
+.icon-clients {
+    background-image: url('./images/icon-clients.png');
+}
+.icon-update {
+    background-image: url('./images/icon-update.png');
+}
+.icon-loyalty {
+    background-image: url('./images/icon-loyalty.png');
+}
+
+
+
+@media (orientation: portrait) {
+    .languages {
+        margin-right: 20px;
+    }
+
+    .page_container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .main_page {
+        height: auto;
+    }
+
+    .img_hand {
+        background-size: 95%;
+        background-position: 11px -30px;
+    } 
+    
+    .img_phone {
+        background-size: 72%;
+        top: 6%;
+        left: 20%;
+    }   
+
+    .first_сircle {
+        width: 75%;
+        height: 100%;
+        margin: 10px 0 0 -10px;
+    }
+
+    .second_сircle {
+        width: 61%;
+        height: 81%;
+        border: 50px solid #E0F2FF;
+        margin-left: 32px;
+    }
+
+
+    .container_phone {
+        height: 403px;
+        margin-bottom: 18px !important;
+    }
+
+    .main_page .content {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .main_page .content > div {
+        margin: 0 10px;
+    }
+
+    .main_page .logo {
+        font-size: 48px;
+        margin-top: 0;
+    }
+
+    .main_page .logo div:nth-child(2) {
+        border-radius: 10px;
+        padding: 0 12px 0 7px;
+    }
+    
+    .main_page .description {
+        font-size: 16px;
+        text-align: start;
+        margin: 0 0 16px;
+    }
+
+    .btn_demo {
+        width: 100%;
+        margin-bottom: 37px;
+    }
+
+    .container_card {
+        margin-bottom: 33px;
+    }
+
+    .container_card > div {
+        font-size: 14px;
+        width: 146px;
+        height: auto;
+        padding: 0 12px 15px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        margin: 10px 10px;
+    }
+
+    .title_advantages {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        margin: 40px 0 14px;    
+    }
+
+    .container_card_phone {
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+    }
+
+    .container_text {
+        padding-left: 16px;
+    }
+
+    .container_text > .title {
+        font-size: 16px !important;
+    }
+
+    .container_text > .phone_description {
+        max-width: 166px !important;
+    }
+
+    .card_phone {
+        min-width: 250px;
+        width: 100%;
+        padding: 25px 20px 0 0;
+        margin: 10px;
+    }
+    
+    .img_card_phone {
+        height: 190px;
+        width: 187px;
+    }
+
+    .container_importance {
+        flex-wrap: wrap;
+    }
+
+    .container_importance .container_text {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .container_importance .title_advantages {
+        text-align: center;
+        margin: 16px 0 5px;
+    }
+
+    .container_importance .container_text .description {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .advantages .container_card > div {
+        font-size: 14px;
+        width: 146px;
+        height: auto;
+        padding: 0 10px 12px 16px;
+        margin: 10px 10px;
+    }
+
+    .container_card .text_card {
+        width: 92%;
+    }
+}
