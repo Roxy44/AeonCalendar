@@ -26,6 +26,7 @@ const TableComponent: React.FC = () => {
     const projectData = useSelector((state: stateType) => state.projectData.data);
     const chartData = useSelector((state: stateType) => state.chartData.chart);
     
+    console.log(projectData)
     const [ startProjectTime, endProjectTime ] = projectData.period.split('-');
 
     const parseStart = moment(startProjectTime, 'DD.MM.YYYY');
