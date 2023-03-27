@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AeonCalendar/static/css/main.6a3c04d0.css",
+    "main.js": "/AeonCalendar/static/js/main.9f062e8d.js",
+    "index.html": "/AeonCalendar/index.html",
+    "main.6a3c04d0.css.map": "/AeonCalendar/static/css/main.6a3c04d0.css.map",
+    "main.9f062e8d.js.map": "/AeonCalendar/static/js/main.9f062e8d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a3c04d0.css",
+    "static/js/main.9f062e8d.js"
+  ]
+}
