@@ -1,5 +1,9 @@
 # Небольшой проект календаря с задачами на React без использования готовых компонентов
 
+## Available Scripts
+
+In the project directory, you can run:
+
 ### `npm start`
 
 Runs the app in the development mode.\
